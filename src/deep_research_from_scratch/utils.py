@@ -1,4 +1,3 @@
-
 """Research Utilities and Tools.
 
 This module provides search and content processing utilities for the research agent,
@@ -21,8 +20,10 @@ from deep_research_from_scratch.prompts import summarize_webpage_prompt
 # ===== UTILITY FUNCTIONS =====
 
 def get_today_str() -> str:
-    """Get current date in a human-readable format."""
-    return datetime.now().strftime("%a %b %-d, %Y")
+    """Get current date in a human-readable format (e.g., 'Sun Nov 30, 2025')."""
+    now = datetime.now()
+    # Use now.day for day of month (no leading zero), and strftime for the rest
+    return f"{now.strftime('%a %b')} {now.day}, {now.year}"
 
 def get_current_dir() -> Path:
     """Get the current directory of the module.

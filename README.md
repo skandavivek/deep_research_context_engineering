@@ -1,4 +1,8 @@
-# 🧱 Deep Research From Scratch 
+# 🧱 Deep Research From Scratch – Context Engineering Fork
+
+> This repo is a fork of [`langchain-ai/deep_research_from_scratch`](https://github.com/langchain-ai/deep_research_from_scratch), adapted for **context engineering** use‑cases.
+>
+> In addition to the original notebooks and LangGraph graphs, this fork includes a lightweight `FastAPI` app (`app.py`) that exposes the core agents as HTTP endpoints. The API layer is intended **purely as an illustration** of how you might deploy these research workflows into production as simple, composable services.
 
 Deep research has broken out as one of the most popular agent applications. [OpenAI](https://openai.com/index/introducing-deep-research/), [Anthropic](https://www.anthropic.com/engineering/built-multi-agent-research-system), [Perplexity](https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research), and [Google](https://gemini.google/overview/deep-research/?hl=en) all have deep research products that produce comprehensive reports using [various sources](https://www.anthropic.com/news/research) of context. There are also many [open](https://huggingface.co/blog/open-deep-research) [source](https://github.com/google-gemini/gemini-fullstack-langgraph-quickstart) implementations. We built an [open deep researcher](https://github.com/langchain-ai/open_deep_research) that is simple and configurable, allowing users to bring their own models, search tools, and MCP servers. In this repo, we'll build a deep researcher from scratch! Here is a map of the major pieces that we will build:
 
