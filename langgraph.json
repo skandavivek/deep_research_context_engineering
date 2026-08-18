@@ -5,7 +5,8 @@
       "research_agent": "./src/deep_research_from_scratch/research_agent.py:researcher_agent",
       "research_agent_mcp": "./src/deep_research_from_scratch/research_agent_mcp.py:agent_mcp",
       "research_agent_supervisor": "./src/deep_research_from_scratch/multi_agent_supervisor.py:supervisor_agent",
-      "research_agent_full": "./src/deep_research_from_scratch/research_agent_full.py:agent"
+      "research_agent_full": "./src/deep_research_from_scratch/research_agent_full.py:agent",
+      "docs_assistant": "./src/deep_research_from_scratch/docs_assistant.py:docs_assistant"
     },
     "python_version": "3.11",
     "env": ".env",

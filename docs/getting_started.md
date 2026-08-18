@@ -1,0 +1,1 @@
+"# Getting Started\n\nThis is a sample document.

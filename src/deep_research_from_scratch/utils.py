@@ -22,9 +22,8 @@ from deep_research_from_scratch.prompts import summarize_webpage_prompt
 
 def get_today_str() -> str:
     """Get current date in a human-readable format."""
-    # Use a cross-platform compatible format string.
-    # `%d` is supported everywhere; we strip any leading zero from the day.
-    return datetime.now().strftime("%a %b %d, %Y").replace(" 0", " ")
+    now = datetime.now()
+    return now.strftime("%a %b ") + str(now.day) + now.strftime(", %Y")
 
 def get_current_dir() -> Path:
     """Get the current directory of the module.
